@@ -1,0 +1,26 @@
+# Build output
+build/
+DerivedData/
+
+# Xcode user data
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Compiled app & DMG (distributed separately)
+*.app/
+*.dmg
+*.ipa
+
+# Xcode generated
+*.moved-aside
+*.orig
+

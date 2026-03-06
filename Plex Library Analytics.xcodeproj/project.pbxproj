@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0232D5BA76A4E8D6DCF77593 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA03E4E6036CF4D75B54183 /* AnalyticsView.swift */; };
+		0484ABEF987097AAA3EB88AB /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067312F4761C7093D1A132D /* KeychainManager.swift */; };
+		054939290D78A2F19D53844F /* ServerSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783083D427F105DC785AD780 /* ServerSetupView.swift */; };
+		14B99EA101A94E7D2802F77A /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDB7DC4C5A78D01453BA3428 /* Logo.png */; };
+		188D87093F6E02ADF73C820B /* PlexLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A53BB795829BE068B7EB5 /* PlexLibrary.swift */; };
+		21CEBCB0BCE10A90F7B2346B /* PlexOAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF42B80181A411B5C8A447B1 /* PlexOAuthService.swift */; };
+		245CE10F33EF20AECB1BC964 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F55AE90FB4E39D60899E7D /* ContentView.swift */; };
+		2EBE66266A7249AD1281D955 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890A34EE7DF3379C6DD12062 /* AppState.swift */; };
+		36D0A9247D2906A412C4C835 /* StatCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6D8B657C8EF02C5C67D3E6 /* StatCardView.swift */; };
+		3726DCE0F968B031335ABCD9 /* MiniPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D252A7FC02D5856D29CB220F /* MiniPieChart.swift */; };
+		46CC969B7378006B2508E215 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32700861C2DE5691127512FE /* DashboardViewModel.swift */; };
+		47A2303A4EE966E5C249FEA2 /* LibraryBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4408293D68BFAC16B8B944 /* LibraryBrowserView.swift */; };
+		47C740EC7E161F6D6FD00E50 /* PlexLibraryAnalyticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F367824B05181D7FEE0F9ABC /* PlexLibraryAnalyticsApp.swift */; };
+		4E6C1A413EE9C2A6B40716D2 /* AnalyticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37840CD0C777FBDBA5814DD /* AnalyticsViewModel.swift */; };
+		5F9784AEFED411995C043EFC /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D48D7C0AC201BF58EBB1C75 /* MediaItem.swift */; };
+		613407FC64E7EE9D4C3E7C0A /* PlexAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD624CDE243FB95874B5E371 /* PlexAPIClient.swift */; };
+		7A432D11FD279AEB0A9D8445 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B5A13DB4D500CB801268E334 /* AppIcon.icns */; };
+		7A4C4CCF4343DC6F2ED6B818 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F880BEED8BE954AF07D03D /* SettingsView.swift */; };
+		7DCFB855D972587F7D82F758 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161AADA527BC9E99C6DC2451 /* DashboardView.swift */; };
+		A1D539CF1F9B65CCDEBAB848 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284554DD0FB6B8F9736800A3 /* Theme.swift */; };
+		B4998AB402DBEACAEEFF9082 /* PlexServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C1D1D2780F32955A3BFA4 /* PlexServer.swift */; };
+		BE2300FAC29F5AE714087A69 /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D4FC3AFCE7D994D853AEF /* MockDataProvider.swift */; };
+		C4E3E326F3325894FFD33B1D /* WelcomeBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD7D7395FE2363CE1D7D54A /* WelcomeBannerView.swift */; };
+		CC831B76BCCB9924C5587E33 /* MediaTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F488623B652C1A7725BA18 /* MediaTableView.swift */; };
+		DBE1FF8EE2DFCB59E7AC0BA6 /* MediaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BEF10573531F0A892A0EAF /* MediaDetailView.swift */; };
+		DFEACCCFAF67573A0DCD1B9F /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F522C23E054AB0497C161BF /* LibraryViewModel.swift */; };
+		E58BF207B27953C14E10A586 /* LibraryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEE4A28F36874E6BA5A735D /* LibraryCardView.swift */; };
+		EAE41828335211C722398876 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A299E0D772069A8B1EEBE3C /* Formatters.swift */; };
+		F2E94DECC77550B63DB0DE50 /* QualityBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA52CB8F60ECED4472CC90B2 /* QualityBadge.swift */; };
+		F2F2FC18E8498A195C2D36F3 /* PlexRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9276135DBEF05B5F7589DCC4 /* PlexRepository.swift */; };
+		F31C21B151F6A23634793689 /* FilterSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E9637F3D167E9735441F47 /* FilterSidebarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		040A53BB795829BE068B7EB5 /* PlexLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexLibrary.swift; sourceTree = "<group>"; };
+		08F488623B652C1A7725BA18 /* MediaTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableView.swift; sourceTree = "<group>"; };
+		0D506E0DA9A87E8F9147134F /* Plex_Library_Analytics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Plex_Library_Analytics.entitlements; sourceTree = "<group>"; };
+		0FD7D7395FE2363CE1D7D54A /* WelcomeBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBannerView.swift; sourceTree = "<group>"; };
+		13F55AE90FB4E39D60899E7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		161AADA527BC9E99C6DC2451 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		25F880BEED8BE954AF07D03D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		284554DD0FB6B8F9736800A3 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		28E9637F3D167E9735441F47 /* FilterSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSidebarView.swift; sourceTree = "<group>"; };
+		2A299E0D772069A8B1EEBE3C /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		3067312F4761C7093D1A132D /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		32700861C2DE5691127512FE /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		407D4FC3AFCE7D994D853AEF /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
+		5A4408293D68BFAC16B8B944 /* LibraryBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryBrowserView.swift; sourceTree = "<group>"; };
+		5F522C23E054AB0497C161BF /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		783083D427F105DC785AD780 /* ServerSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSetupView.swift; sourceTree = "<group>"; };
+		890A34EE7DF3379C6DD12062 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		8BA03E4E6036CF4D75B54183 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		9276135DBEF05B5F7589DCC4 /* PlexRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexRepository.swift; sourceTree = "<group>"; };
+		9D48D7C0AC201BF58EBB1C75 /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		AD624CDE243FB95874B5E371 /* PlexAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexAPIClient.swift; sourceTree = "<group>"; };
+		AF42B80181A411B5C8A447B1 /* PlexOAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexOAuthService.swift; sourceTree = "<group>"; };
+		B5A13DB4D500CB801268E334 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		B80702465AF31B94C94A643A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C9BEF10573531F0A892A0EAF /* MediaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailView.swift; sourceTree = "<group>"; };
+		CCEE4A28F36874E6BA5A735D /* LibraryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCardView.swift; sourceTree = "<group>"; };
+		D252A7FC02D5856D29CB220F /* MiniPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPieChart.swift; sourceTree = "<group>"; };
+		DCFA94336F2D4FE3B8CF9AE0 /* Plex Library Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plex Library Analytics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15C1D1D2780F32955A3BFA4 /* PlexServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexServer.swift; sourceTree = "<group>"; };
+		EC6D8B657C8EF02C5C67D3E6 /* StatCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCardView.swift; sourceTree = "<group>"; };
+		EDB7DC4C5A78D01453BA3428 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		F367824B05181D7FEE0F9ABC /* PlexLibraryAnalyticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlexLibraryAnalyticsApp.swift; sourceTree = "<group>"; };
+		F37840CD0C777FBDBA5814DD /* AnalyticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewModel.swift; sourceTree = "<group>"; };
+		FA52CB8F60ECED4472CC90B2 /* QualityBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualityBadge.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		43407DD1EE5EC39D702F4130 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				28E9637F3D167E9735441F47 /* FilterSidebarView.swift */,
+				5A4408293D68BFAC16B8B944 /* LibraryBrowserView.swift */,
+				C9BEF10573531F0A892A0EAF /* MediaDetailView.swift */,
+				08F488623B652C1A7725BA18 /* MediaTableView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4471EE95912AAEB1F6FCB65A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D252A7FC02D5856D29CB220F /* MiniPieChart.swift */,
+				FA52CB8F60ECED4472CC90B2 /* QualityBadge.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4CA65F93263C310303E13EC1 = {
+			isa = PBXGroup;
+			children = (
+				BFF0995F345E5A1206149E36 /* Plex Library Analytics */,
+				BE4EAAAD5108A54C5D5FA23F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5183DFB2978D8D805854D195 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				25F880BEED8BE954AF07D03D /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		68228ADC2DA6B466F0D01F0F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3067312F4761C7093D1A132D /* KeychainManager.swift */,
+				407D4FC3AFCE7D994D853AEF /* MockDataProvider.swift */,
+				AD624CDE243FB95874B5E371 /* PlexAPIClient.swift */,
+				AF42B80181A411B5C8A447B1 /* PlexOAuthService.swift */,
+				9276135DBEF05B5F7589DCC4 /* PlexRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		76CC7F955589A452F19D5997 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F37840CD0C777FBDBA5814DD /* AnalyticsViewModel.swift */,
+				890A34EE7DF3379C6DD12062 /* AppState.swift */,
+				32700861C2DE5691127512FE /* DashboardViewModel.swift */,
+				5F522C23E054AB0497C161BF /* LibraryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7744522DF1EF4D35AEF31216 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				783083D427F105DC785AD780 /* ServerSetupView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		BE4EAAAD5108A54C5D5FA23F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCFA94336F2D4FE3B8CF9AE0 /* Plex Library Analytics.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF0995F345E5A1206149E36 /* Plex Library Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				DECCBC73872A0FE4811E65A9 /* App */,
+				ED272B2F0072644EF8EFBA1D /* Models */,
+				68228ADC2DA6B466F0D01F0F /* Services */,
+				E2BBBB0C4477AD46210722B3 /* Utilities */,
+				76CC7F955589A452F19D5997 /* ViewModels */,
+				C271301C3D177A585C40277F /* Views */,
+				B5A13DB4D500CB801268E334 /* AppIcon.icns */,
+				B80702465AF31B94C94A643A /* Info.plist */,
+				EDB7DC4C5A78D01453BA3428 /* Logo.png */,
+				0D506E0DA9A87E8F9147134F /* Plex_Library_Analytics.entitlements */,
+			);
+			path = "Plex Library Analytics";
+			sourceTree = "<group>";
+		};
+		C271301C3D177A585C40277F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7C8E430750534F94BF83558 /* Analytics */,
+				4471EE95912AAEB1F6FCB65A /* Components */,
+				FB27E68A8935D205E6A50740 /* Dashboard */,
+				43407DD1EE5EC39D702F4130 /* Library */,
+				7744522DF1EF4D35AEF31216 /* Onboarding */,
+				5183DFB2978D8D805854D195 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DECCBC73872A0FE4811E65A9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				13F55AE90FB4E39D60899E7D /* ContentView.swift */,
+				F367824B05181D7FEE0F9ABC /* PlexLibraryAnalyticsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E2BBBB0C4477AD46210722B3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2A299E0D772069A8B1EEBE3C /* Formatters.swift */,
+				284554DD0FB6B8F9736800A3 /* Theme.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E7C8E430750534F94BF83558 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				8BA03E4E6036CF4D75B54183 /* AnalyticsView.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		ED272B2F0072644EF8EFBA1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D48D7C0AC201BF58EBB1C75 /* MediaItem.swift */,
+				040A53BB795829BE068B7EB5 /* PlexLibrary.swift */,
+				E15C1D1D2780F32955A3BFA4 /* PlexServer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB27E68A8935D205E6A50740 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				161AADA527BC9E99C6DC2451 /* DashboardView.swift */,
+				CCEE4A28F36874E6BA5A735D /* LibraryCardView.swift */,
+				EC6D8B657C8EF02C5C67D3E6 /* StatCardView.swift */,
+				0FD7D7395FE2363CE1D7D54A /* WelcomeBannerView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11A7D7A1FD468EF7DEAC67CD /* Plex Library Analytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 476069D59DC9EDEEB7CEFC22 /* Build configuration list for PBXNativeTarget "Plex Library Analytics" */;
+			buildPhases = (
+				F56664361D68542E73482DCC /* Sources */,
+				5DB52BD5C189B37FBFFFB7A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Plex Library Analytics";
+			packageProductDependencies = (
+			);
+			productName = "Plex Library Analytics";
+			productReference = DCFA94336F2D4FE3B8CF9AE0 /* Plex Library Analytics.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4725B839F00B465F8B7EBEEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+			};
+			buildConfigurationList = 5CE3EFA96E323B79EE67E007 /* Build configuration list for PBXProject "Plex Library Analytics" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4CA65F93263C310303E13EC1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11A7D7A1FD468EF7DEAC67CD /* Plex Library Analytics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DB52BD5C189B37FBFFFB7A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A432D11FD279AEB0A9D8445 /* AppIcon.icns in Resources */,
+				14B99EA101A94E7D2802F77A /* Logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F56664361D68542E73482DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0232D5BA76A4E8D6DCF77593 /* AnalyticsView.swift in Sources */,
+				4E6C1A413EE9C2A6B40716D2 /* AnalyticsViewModel.swift in Sources */,
+				2EBE66266A7249AD1281D955 /* AppState.swift in Sources */,
+				245CE10F33EF20AECB1BC964 /* ContentView.swift in Sources */,
+				7DCFB855D972587F7D82F758 /* DashboardView.swift in Sources */,
+				46CC969B7378006B2508E215 /* DashboardViewModel.swift in Sources */,
+				F31C21B151F6A23634793689 /* FilterSidebarView.swift in Sources */,
+				EAE41828335211C722398876 /* Formatters.swift in Sources */,
+				0484ABEF987097AAA3EB88AB /* KeychainManager.swift in Sources */,
+				47A2303A4EE966E5C249FEA2 /* LibraryBrowserView.swift in Sources */,
+				E58BF207B27953C14E10A586 /* LibraryCardView.swift in Sources */,
+				DFEACCCFAF67573A0DCD1B9F /* LibraryViewModel.swift in Sources */,
+				DBE1FF8EE2DFCB59E7AC0BA6 /* MediaDetailView.swift in Sources */,
+				5F9784AEFED411995C043EFC /* MediaItem.swift in Sources */,
+				CC831B76BCCB9924C5587E33 /* MediaTableView.swift in Sources */,
+				3726DCE0F968B031335ABCD9 /* MiniPieChart.swift in Sources */,
+				BE2300FAC29F5AE714087A69 /* MockDataProvider.swift in Sources */,
+				613407FC64E7EE9D4C3E7C0A /* PlexAPIClient.swift in Sources */,
+				188D87093F6E02ADF73C820B /* PlexLibrary.swift in Sources */,
+				47C740EC7E161F6D6FD00E50 /* PlexLibraryAnalyticsApp.swift in Sources */,
+				21CEBCB0BCE10A90F7B2346B /* PlexOAuthService.swift in Sources */,
+				F2F2FC18E8498A195C2D36F3 /* PlexRepository.swift in Sources */,
+				B4998AB402DBEACAEEFF9082 /* PlexServer.swift in Sources */,
+				F2E94DECC77550B63DB0DE50 /* QualityBadge.swift in Sources */,
+				054939290D78A2F19D53844F /* ServerSetupView.swift in Sources */,
+				7A4C4CCF4343DC6F2ED6B818 /* SettingsView.swift in Sources */,
+				36D0A9247D2906A412C4C835 /* StatCardView.swift in Sources */,
+				A1D539CF1F9B65CCDEBAB848 /* Theme.swift in Sources */,
+				C4E3E326F3325894FFD33B1D /* WelcomeBannerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		09D9119740E6E11DB4F69219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		85A423BF5CA313F63D1184F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Plex Library Analytics/Plex_Library_Analytics.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				ICON_FILE = AppIcon;
+				INFOPLIST_FILE = "Plex Library Analytics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.plexanalytics.Plex-Library-Analytics";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA1BE358171BB090D9ED2B02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DB70F18E8B29073A473EED87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Plex Library Analytics/Plex_Library_Analytics.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				ICON_FILE = AppIcon;
+				INFOPLIST_FILE = "Plex Library Analytics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.plexanalytics.Plex-Library-Analytics";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		476069D59DC9EDEEB7CEFC22 /* Build configuration list for PBXNativeTarget "Plex Library Analytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A423BF5CA313F63D1184F2 /* Debug */,
+				DB70F18E8B29073A473EED87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5CE3EFA96E323B79EE67E007 /* Build configuration list for PBXProject "Plex Library Analytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1BE358171BB090D9ED2B02 /* Debug */,
+				09D9119740E6E11DB4F69219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4725B839F00B465F8B7EBEEC /* Project object */;
+}

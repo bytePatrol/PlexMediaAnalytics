@@ -1,182 +1,210 @@
-<p align="center">
-  <img src="Plex Library Analytics/Logo.png" width="128" alt="Plex Library Analytics">
-</p>
+<div align="center">
+  <img src="Plex Library Analytics/Resources/Assets.xcassets/AppIcon.appiconset/icon_128x128@2x.png" width="128" alt="Plex Library Analytics">
 
-<h1 align="center">Plex Library Analytics</h1>
+  # Plex Library Analytics
 
-<p align="center">
-  A powerful macOS application that gives you deep insights into your Plex media library — quality breakdowns, storage analysis, codec distributions, and more.
-</p>
+  **A native macOS app that transforms your Plex Media Server into a full analytics dashboard.**
 
-<p align="center">
-  <img src="https://img.shields.io/badge/macOS-14.0%2B-blue?style=flat-square&logo=apple" />
-  <img src="https://img.shields.io/badge/Swift-5.0-orange?style=flat-square&logo=swift" />
-  <img src="https://img.shields.io/badge/SwiftUI-native-green?style=flat-square" />
-  <img src="https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square" />
-</p>
+  [![macOS 14+](https://img.shields.io/badge/macOS-14.0%2B-black?style=flat-square&logo=apple)](https://www.apple.com/macos/sonoma/)
+  [![Swift 5](https://img.shields.io/badge/Swift-5.0-orange?style=flat-square&logo=swift)](https://swift.org/)
+  [![SwiftUI](https://img.shields.io/badge/SwiftUI-native-teal?style=flat-square)](https://developer.apple.com/xcode/swiftui/)
+  [![Swift Charts](https://img.shields.io/badge/Swift_Charts-native-blue?style=flat-square)](https://developer.apple.com/documentation/charts)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)](LICENSE)
+  [![Latest Release](https://img.shields.io/github/v/release/bytePatrol/PlexMediaAnalytics?style=flat-square&color=brightgreen&label=Download)](https://github.com/bytePatrol/PlexMediaAnalytics/releases/latest)
+
+  ![Dashboard View](screenshots/01_dashboard.png)
+</div>
+
+---
+
+Plex Library Analytics connects directly to your Plex Media Server and gives you a complete, visual picture of your entire media collection. Know exactly how much storage each library consumes, which codecs dominate your collection, how your library has grown year over year, and drill into the technical specs of every single file — all in a beautiful dark-themed native macOS app with zero third-party dependencies.
+
+## Features
+
+### Dashboard
+Everything you need to know about your library, at a glance.
+
+- **Live stat cards** — total item count, total storage used, percentage of 4K content, and recently added count, all pulled live from your server
+- **Per-library overview cards** — each library shows its item count, total size, and a color-coded mini pie chart of resolution distribution (4K / 1080p / 720p / SD), plus the most recently added title with its poster thumbnail
+- **Connection status indicator** — a persistent live indicator confirms your server is reachable at all times
+
+### Library Browser
+Explore every item in your library with powerful search, filtering, and sorting.
+
+- **Full media table** — browse across all libraries in a paginated table with columns for title, date added, file size, resolution, codec, bitrate, audio format, and HDR status
+- **Live full-text search** — filter by title, year, codec, or any metadata field instantly as you type
+- **Filter sidebar** — narrow results by library, resolution tier, video codec, and date added range
+- **Multi-column sorting** — sort ascending or descending by any column
+- **Pagination** — 20 items per page with fast navigation across libraries of 34,000+ items
+- **Media detail sheet** — double-click any row to open a rich detail panel with the full poster image, complete stream information (video, audio, subtitle tracks), and file metadata
+- **CSV export** — export the current filtered and sorted view to a spreadsheet in one click
+
+### Analytics
+Five interactive Swift Charts charts give you an honest picture of your library composition.
+
+- **Storage by Library** — horizontal bar chart showing exactly how many terabytes each library consumes side by side
+- **Quality Distribution** — donut chart breaking down the percentage of 4K, 1080p, 720p, and SD content across your entire collection
+- **Content Added Over Time** — combined line and area chart plotting exactly how your library has grown, month by month
+- **Audio Format Breakdown** — donut chart cataloguing every audio codec present (AAC, AC3, EAC3, DCA, TrueHD, DTS-X, Atmos, Opus, and more)
+- **File Size Distribution** — histogram of per-file sizes across your collection, making outliers immediately obvious
+- **Summary stat boxes** — average bitrate, average file size, total HDR item count, and aggregate library duration
+
+### Settings
+Tune the app to your workflow without touching a config file.
+
+- **General** — set the default startup tab, toggle relative vs. absolute date formatting, show or hide full file paths
+- **Servers** — add, edit, remove, and test multiple Plex server connections; toggle HTTPS per server
+- **Display** — UI density and appearance preferences
+- **Performance** — control request batch sizes and auto-refresh intervals (5 min · 15 min · 30 min · 1 hr)
+
+### Security & Privacy
+- Authentication tokens are stored exclusively in the **macOS Keychain** — never written to disk in plain text
+- Full support for **self-signed SSL certificates** on local Plex servers — no workarounds needed
+- **Zero telemetry** — no analytics, no crash reporting SDKs, no network calls beyond your own Plex server
+- **Read-only** — the app never writes to or modifies your Plex library or metadata
 
 ---
 
 ## Screenshots
 
 | Dashboard | Library Browser |
-|-----------|----------------|
-| ![Dashboard](docs/screenshots/dashboard.png) | ![Library](docs/screenshots/library.png) |
+|:---------:|:---------------:|
+| ![Dashboard](screenshots/01_dashboard.png) | ![Library Browser](screenshots/02_libraries.png) |
 
-| Analytics | Media Detail |
-|-----------|-------------|
-| ![Analytics](docs/screenshots/analytics.png) | ![Detail](docs/screenshots/detail.png) |
-
----
-
-## Features
-
-### Dashboard
-- **At-a-glance stats** — total item count, storage used, 4K content percentage, and recently added items
-- **Library overview cards** — per-library quality distribution pie charts with last-added media previews
-- **Recent activity chart** — 30-day bar chart of items added to your server
-
-### Library Browser
-- **Full media table** — browse every item across all libraries with columns for title, date added, file size, resolution, codec, bitrate, audio format, and HDR
-- **Live search** — filter by title, year, codec, or resolution instantly
-- **Sidebar filters** — narrow by library, resolution, video codec, file size range, and date added
-- **Multi-column sorting** — sort ascending or descending by any column
-- **Pagination** — configurable page size for large libraries
-- **Media detail sheet** — full technical breakdown per item including video, audio, subtitles, and file metadata
-- **Open in Plex** — deep-link directly to any item in the Plex web player
-- **Show in Finder** — reveal the media file in Finder (local servers), or copy the path to clipboard (remote servers)
-- **CSV export** — export the current filtered view to a spreadsheet
-
-### Analytics
-- **Storage by library** — horizontal bar chart comparing library sizes
-- **Quality distribution** — donut chart breaking down 4K / 1080p / 720p / SD across your entire library
-- **Content over time** — line and area chart showing library growth
-- **Audio codec breakdown** — visualise Dolby Atmos, DTS-X, TrueHD, and more
-- **File size distribution** — histogram of file sizes across your collection
-- **Summary stat boxes** — average bitrate, average file size, HDR percentage, and total duration
-
-### Connectivity
-- **Plex OAuth sign-in** — secure browser-based sign-in via plex.tv; no password ever stored in the app
-- **Automatic server discovery** — fetches all servers linked to your Plex account after sign-in
-- **Manual server entry** — connect directly with host, port, and token for advanced setups
-- **Self-signed certificate support** — works with local Plex servers using HTTPS and self-signed certs
-- **Token storage in Keychain** — authentication tokens are stored securely in the macOS Keychain, never in plain text
-- **Auto-reconnect** — remembers your last server and reconnects on launch
-- **Configurable auto-refresh** — keep stats up to date automatically (5 min, 15 min, 30 min, 1 hour)
-
-### Settings
-- **General** — default tab, page size, thumbnail toggle
-- **Servers** — manage saved servers, add or remove connections
-- **Display** — UI preferences
-- **Performance** — auto-refresh interval
-
----
-
-## Requirements
-
-| Requirement | Version |
-|-------------|---------|
-| macOS | 14.0 Sonoma or later |
-| Plex Media Server | Any recent version |
-| Xcode (to build) | 15.0 or later |
+| Analytics | Settings |
+|:---------:|:--------:|
+| ![Analytics](screenshots/03_analytics.png) | ![Settings](screenshots/04_settings.png) |
 
 ---
 
 ## Installation
 
-### Option A — DMG (Recommended)
+### Download — Recommended
 
-1. Download **`Plex Library Analytics.dmg`** from the [latest release](https://github.com/bytePatrol/PlexMediaAnalytics/releases/latest)
-2. Open the DMG and drag **Plex Library Analytics.app** to your **Applications** folder
-3. Launch the app, click **Connect Server**, and sign in with your Plex account
+1. Go to the [**Latest Release**](https://github.com/bytePatrol/PlexMediaAnalytics/releases/latest)
+2. Download **`Plex Library Analytics.dmg`**
+3. Open the DMG and drag **Plex Library Analytics.app** to your **Applications** folder
+4. Launch the app and connect your server
 
-> **First launch:** macOS may show a Gatekeeper warning because the app is not notarised. Right-click the app → **Open** → **Open** to bypass it.
+> **First launch:** macOS may show a Gatekeeper warning because the app is not notarized. Right-click the app icon → **Open** → **Open** to allow it.
 
-### Option B — Build from Source
+### Connect Your Server
+
+1. Click **Add Server** on the welcome screen
+2. Enter your Plex server's **hostname or IP address** and **port** (default: `32400`)
+3. Enable **Secure (HTTPS)** if your server uses TLS — self-signed certificates are supported automatically
+4. Paste your **Plex Token** — find it in Plex Web under *Settings → Account*, or in any Plex API URL as `X-Plex-Token`
+5. Click **Test Connection** to verify, then **Save**
+
+Your libraries will begin loading immediately.
+
+---
+
+## Build from Source
+
+### Requirements
+
+| Dependency | Version |
+|-----------|---------|
+| macOS | 14.0 Sonoma or later |
+| Xcode | 15.4 or later |
+| Swift | 5.0 |
+| XcodeGen | 2.x — `brew install xcodegen` |
+
+### Steps
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/bytePatrol/PlexMediaAnalytics.git
 cd PlexMediaAnalytics
 
-# Generate the Xcode project (requires XcodeGen)
-brew install xcodegen
+# 2. Generate the Xcode project
 xcodegen generate
 
-# Open in Xcode
-open "Plex Library Analytics.xcodeproj"
+# 3. Build (Release)
+xcodebuild \
+  -project "Plex Library Analytics.xcodeproj" \
+  -scheme "Plex Library Analytics" \
+  -configuration Release \
+  -derivedDataPath build \
+  build
+
+# 4. Install to Applications
+rm -rf "/Applications/Plex Library Analytics.app"
+ditto "build/Build/Products/Release/Plex Library Analytics.app" \
+      "/Applications/Plex Library Analytics.app"
+
+open "/Applications/Plex Library Analytics.app"
 ```
 
-Then build and run with **⌘R** in Xcode, or from the command line:
-
-```bash
-xcodebuild -project "Plex Library Analytics.xcodeproj" \
-           -scheme "Plex Library Analytics" \
-           -configuration Release \
-           build
-```
-
----
-
-## Getting Started
-
-1. **Launch** the app — it opens in Demo Mode with sample data so you can explore the UI immediately
-2. Click **Connect Server** in the welcome banner (or via the **Server** menu)
-3. Choose **Sign in with Plex** to authenticate via plex.tv, or enter your server details manually
-4. Your libraries will load automatically after connecting
-5. Use the **Dashboard**, **Libraries**, and **Analytics** tabs to explore your collection
-
----
-
-## Project Structure
-
-```
-Plex Library Analytics/
-├── App/                        # App entry point and root view
-├── Models/                     # Data models (PlexServer, PlexLibrary, MediaItem)
-├── Services/
-│   ├── PlexAPIClient.swift     # REST API client with self-signed cert support
-│   ├── PlexRepository.swift    # Data layer with Combine publishers
-│   ├── PlexOAuthService.swift  # Plex OAuth PIN-based authentication
-│   ├── KeychainManager.swift   # Secure token storage
-│   └── MockDataProvider.swift  # Demo data for offline preview
-├── ViewModels/                 # MVVM view models (AppState, Dashboard, Library, Analytics)
-├── Views/
-│   ├── Dashboard/              # Dashboard tab views
-│   ├── Library/                # Library browser, table, filters, detail sheet
-│   ├── Analytics/              # Charts and analytics views
-│   ├── Settings/               # Settings window
-│   ├── Onboarding/             # Server setup / OAuth flow
-│   └── Components/             # Shared UI components
-├── Utilities/
-│   ├── Theme.swift             # Design tokens and view modifiers
-│   └── Formatters.swift        # Number, date, and size formatters
-└── Resources/
-    └── Assets.xcassets         # App icon and colour assets
-```
+Or open in Xcode and press **⌘R** to build and run directly.
 
 ---
 
 ## Architecture
 
-- **Pattern:** MVVM with a Repository layer
-- **State management:** `AppState` as a shared `@EnvironmentObject` with Combine publishers
-- **Navigation:** Tab-based (`Dashboard`, `Libraries`, `Analytics`) via `ContentView`
-- **Networking:** `URLSession` with a custom `URLSessionDelegate` for self-signed TLS certificates
-- **Security:** OAuth tokens stored exclusively in the macOS Keychain via `SecItemAdd` / `SecItemCopyMatching`
-- **Charts:** Native Swift Charts framework (no third-party dependencies)
+The project follows **MVVM with a Repository pattern**, driven by Combine publishers and SwiftUI's environment system.
+
+```
+Plex Library Analytics/
+├── App/
+│   ├── PlexLibraryAnalyticsApp.swift   # @main entry point
+│   └── ContentView.swift               # Root view, tab navigation
+├── Models/
+│   ├── MediaItem.swift                 # Core media metadata model
+│   ├── PlexLibrary.swift               # Library model
+│   └── PlexServer.swift                # Server model with Keychain integration
+├── Services/
+│   ├── PlexAPIClient.swift             # REST API client (async/await + Codable)
+│   ├── PlexRepository.swift            # Data layer with Combine publishers
+│   ├── MockDataProvider.swift          # Sample data for offline preview
+│   ├── KeychainManager.swift           # Secure token storage (SecItem APIs)
+│   └── PlexOAuthService.swift          # PIN-based OAuth flow
+├── ViewModels/
+│   ├── AppState.swift                  # Shared @EnvironmentObject
+│   ├── DashboardViewModel.swift
+│   ├── LibraryViewModel.swift
+│   └── AnalyticsViewModel.swift
+├── Views/
+│   ├── Dashboard/                      # Stat cards, library cards, welcome banner
+│   ├── Library/                        # Browser table, filter sidebar, detail sheet
+│   ├── Analytics/                      # All Swift Charts visualizations
+│   ├── Settings/                       # Tabbed settings panel
+│   ├── Onboarding/                     # Server setup flow
+│   └── Components/                     # MiniPieChart, QualityBadge, shared components
+└── Utilities/
+    ├── Theme.swift                     # PlexTheme design tokens + view modifiers
+    └── Formatters.swift                # Date, file size, and bitrate formatters
+```
+
+**Notable implementation details:**
+
+- All Plex API calls use `async/await`; Combine publishers propagate results to ViewModels
+- `PlexTrustDelegate` implements `URLSessionDelegate` to accept self-signed TLS certificates on local servers
+- TV Show libraries request episode-level metadata with `type=4` appended to the `/library/sections/{key}/all` endpoint, since show-level responses contain no `Media` stream objects
+- Thumbnail loading is triggered from `onAppear` directly on each `MediaTableRow` rather than delegated to a child view, ensuring reliable firing inside `LazyVStack`
+- No third-party dependencies — Swift Charts, Combine, and URLSession handle everything
 
 ---
 
-## Privacy & Security
+## Requirements
 
-- **No data leaves your network** — the app communicates only with your Plex server and plex.tv for authentication
-- **No telemetry or analytics** — zero tracking, zero third-party SDKs
-- **Keychain storage** — auth tokens are stored in the macOS Keychain, not UserDefaults or files
-- **Read-only** — the app never modifies your Plex library or metadata
+| Requirement | Minimum |
+|-------------|---------|
+| macOS | 14.0 Sonoma |
+| Plex Media Server | Any recent version |
+| Network | Local or remote access to your Plex server |
 
 ---
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+[MIT License](LICENSE) — use it, fork it, ship it.
+
+---
+
+<div align="center">
+
+Built for Plex power users who want real numbers, not just a pretty grid.
+
+</div>

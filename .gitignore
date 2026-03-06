@@ -15,7 +15,7 @@ DerivedData/
 .LSOverride
 Icon?
 
-# Compiled app & DMG (distributed separately)
+# Compiled app & DMG (distributed via Releases)
 *.app/
 *.dmg
 *.ipa
@@ -23,4 +23,3 @@ Icon?
 # Xcode generated
 *.moved-aside
 *.orig
-
